@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Film Finder</title>
+  </head>
+  <body>
+    <form class="deco">
+      <label for="site-search"><h1 class="title">Film Finder</h1> </label><br />
+      <div class="search-disposition">
+        <input
+          type="search"
+          id="site-search"
+          name="q"
+          aria-label="Search through site content"
+        />
+        <button type="submit" class="btn">🔍</button>
+      </div>
+    </form>
+    <div id="card-film"></div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="description-modal"></div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

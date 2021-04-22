@@ -1,0 +1,144 @@
+#site-search {
+  width: 100%;
+  height: 40px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
+  border-radius: 100px;
+  outline: none;
+}
+
+.search-disposition {
+  display: flex;
+  border: 1.5px solid rgba(214, 203, 203, 0.795);
+  border-radius: 100px;
+  animation-name: slidedown;
+  animation-duration: 2s;
+  box-shadow: 1px 1px 4px #555;
+}
+
+.btn {
+  margin-right: 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.title {
+  color: rgb(252, 144, 0);
+  text-align: center;
+  font-size: 3em;
+  animation-name: slidedown;
+  animation-duration: 2s;
+  text-shadow: 1px 1px 5px #555;
+}
+
+@keyframes slidedown {
+  0% {
+    transform: translateY(-1000px);
+  }
+  50% {
+    transform: scale(2);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+#card-film {
+  display: flex;
+  flex-direction: column;
+}
+.align-card-film {
+  display: flex;
+  margin-top: 30px;
+  max-width: 500px;
+  padding: 10px;
+  border: 1px solid rgba(214, 203, 203, 0.795);
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px #555;
+
+  transform: translateX(0);
+  opacity: 1;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.align-card-film.not-visible {
+  transform: translateX(50px);
+  opacity: 0;
+}
+.read-more {
+  width: 50%;
+  height: 30px;
+  align-self: center;
+  box-shadow: 1px 1px 5px #555;
+}
+.card-film-r {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.img-card-film {
+  width: 120px;
+  height: 170px;
+  box-shadow: 1px 1px 5px #555;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 50px; /* Location of the box */
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  border-radius: 8px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.description-modal {
+  display: flex;
+}
+.img-modal {
+  width: 300px;
+  height: 400px;
+  box-shadow: 1px 1px 5px #555;
+}
+.modal-r {
+  margin-left: 15px;
+}
